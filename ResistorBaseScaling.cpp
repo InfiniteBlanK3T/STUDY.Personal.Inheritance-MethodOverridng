@@ -78,3 +78,37 @@ void ResistorBase::convertUnitValueToBaseValue( const double& aRawValue,
 
     setBaseValue( lRawValue * lMultiplier );
 }
+
+void ResistorBase::setBaseValue(double aBaseValue) noexcept
+{
+    fBaseValue = aBaseValue;
+}
+
+ResistorBase::ResistorBase( double aBaseValue) noexcept:
+    fBaseValue(aBaseValue)
+{}
+
+double ResistorBase::getBaseValue() const noexcept
+{
+    return fBaseValue;
+}
+
+double ResistorBase::getPotentialAt(double aCurrent, double aFrequency) const noexcept
+{
+    return fBaseValue * aCurrent;
+}
+
+double ResistorBase::getCurrentAt(double aVoltage, double aFrequency) const noexcept
+{
+    return aVoltage / fBaseValue;
+}
+
+std::istream& operator>>(std::istream& aIStream, ResistorBase& aObject)
+{
+    return aIStream >> aObject.fBaseValue;
+}
+
+std::ostream& operator<<(std::ostream& aOStream, const ResistorBase& aObject)
+{
+    return aOStream << aObject.fBaseValue;
+}

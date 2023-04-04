@@ -21,6 +21,9 @@
     <ClCompile Include="ResistorBaseScaling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PassiveResistor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Capacitor.h">
