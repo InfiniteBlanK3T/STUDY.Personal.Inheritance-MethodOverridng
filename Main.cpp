@@ -1,11 +1,11 @@
 
 // COS30008, Tutorial 6, 2023
 
-#define P1
+//#define P1
 //#define P2
 //#define P3
 //#define P4
-//#define P5
+#define P5
 
 #include <iostream>
 #include <iomanip>

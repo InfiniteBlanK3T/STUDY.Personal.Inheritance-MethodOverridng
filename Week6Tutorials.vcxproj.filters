@@ -18,10 +18,19 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PassiveResistor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="ResistorBaseScaling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassiveResistor.cpp">
+    <ClCompile Include="ResistorBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Capacitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inductor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,5 +47,19 @@
     <ClInclude Include="ResistorBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Capacitor[Solution].cpp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Inductor[Solution].cpp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="PassiveResitor[Solution].cpp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResistorBase[Solution].cpp">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
